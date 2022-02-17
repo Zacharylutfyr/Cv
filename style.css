@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.left-container {
+    position: fixed;
+    width: 400px;
+    height: 100Vh;
+    background-color: black;
+}
+
+.photo {
+    width: 40%;
+    margin-bottom: 10px;
+    border-radius: 7%;
+    -webkit-border-radius: 7%;
+    -moz-border-radius: 7%;
+    -ms-border-radius: 7%;
+    -o-border-radius: 7%;
+}
+
+.photo-profil {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-btn {
+    width: 50%;
+    background-color: white;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contact-btn:hover {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.darkmode h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+
+#darkmode {
+    background: black;
+    color: white;
+}
+
+#darkmode .menu {
+    background: black;
+    color: white;
+}
+
+#darkmode .title {
+    background: black;
+    color: white;
+}
+
+#darkmode .left-container {
+    background-color: rgba(22, 22, 22, 0.774);
+}
+
+#darkmode .top-bar {
+    background: black;
+    position: fixed;
+}
+
+.right-container {
+    position: absolute;
+    left: 400px;
+}
+
+.top-bar {
+    padding-top: 50px;
+    padding-left: 30px;
+    background-color: whitesmoke;
+    position: fixed;
+}
+
+.title {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.list-menu {
+    float: right;
+    padding-right: 50px;
+}
+
+.menu {
+    font-size: 1.1rem;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#profile {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#about {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#experience {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#education {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#skills {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#workshop {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#kursus {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#Key-expertise {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+p,
+li {
+    line-height: 200%;
+}
