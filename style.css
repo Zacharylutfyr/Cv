@@ -1,13 +1,61 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body {
-    margin: 0;
+    line-height: 1;
     padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
 }
 
 .left-container {
+    width: 360px;
+    height: 100%;
+    background-color: rgb(24, 24, 24);
+    z-index: 9;
     position: fixed;
-    width: 400px;
-    height: 100Vh;
-    background-color: black;
+    font-size: 14px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .photo {
@@ -21,7 +69,7 @@ body {
 }
 
 .photo-profil {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -41,12 +89,126 @@ body {
 
 .contact-btn:hover {
     background-color: black;
-    color: blanchedalmond;
+    color: rgb(255, 255, 255);
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    cursor: pointer;
 }
 
-.darkmode h2 {
-    color: rgb(255, 255, 255);
-    margin-top: 15px;
+.icon {
+    cursor: pointer;
+}
+
+.right-container{
+    position: absolute;
+    left: 360px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#profile {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+#about {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+#experience {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+#education {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+#skills {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+#workshop {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+#kursus {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+#Key-expertise {
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+
+p,
+li {
+    line-height: 200%;
+    font-size: medium;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
 }
 
 #darkmode {
@@ -73,87 +235,27 @@ body {
     position: fixed;
 }
 
-.right-container {
-    position: absolute;
-    left: 400px;
+#darkmode .left-container {
+    background-color: black;
 }
 
-.top-bar {
-    padding-top: 50px;
-    padding-left: 30px;
-    background-color: whitesmoke;
-    position: fixed;
+#darkmode .right-container {
+    background-color: black;
 }
 
-.title {
-    font-style: italic;
-    font-size: 1.1rem;
+#darkmode .contact-btn {
+    background-color: black;
+    box-shadow: 5px gray;
+    color: whitesmoke;
 }
 
-.list-menu {
-    float: right;
-    padding-right: 50px;
-}
-
-.menu {
-    font-size: 1.1rem;
-    padding: 0 15px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-#profile {
-    padding-top: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-#about {
-    padding-top: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-#experience {
-    padding-top: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-#education {
-    padding-top: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-#skills {
-    padding-top: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-#workshop {
-    padding-top: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-#kursus {
-    padding-top: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-#Key-expertise {
-    padding-top: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-p,
-li {
-    line-height: 200%;
+#darkmode .contact-btn:hover {
+    background-color: rgb(43, 43, 43);
+    color:  (white);
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    cursor: pointer;
 }
